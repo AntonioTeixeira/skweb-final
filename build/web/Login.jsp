@@ -11,7 +11,7 @@
 <html lang="pt-br">
     <head>
         
-        <title>Login - SmartK</title>
+        <title>Fazer Login no SmartK</title>
         <meta name="description" content="Sistema de Gestão do SmartK" />
 
 	<meta charset="UTF-8">

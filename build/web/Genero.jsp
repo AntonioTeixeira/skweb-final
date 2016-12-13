@@ -30,7 +30,7 @@
                 <ol class="breadcrumb">
                     <li><a href="index.html" title="Tela Inicial">Home</a></li>
                     <li><a href="ListaGenero.jsp" title="Lista de Generos">Generos</a></li>
-                    <li class="active"><a href="#" title="Gênero">Gênero ${param.nome}</a></li>
+                    <li class="active"><a href="#" title="Gênero">Gênero: ${param.nome}</a></li>
 		</ol>
             </div>
 	</div>
@@ -43,32 +43,36 @@
                 </div>
             </header>
             
-            <div class="container listagem-default">                
-                <form name="Genero" action="CadastrarGenero" method="Post" onsubmit="return validarGenero();">                                                             
-                        <div class="form-group">
-                            <%--<label for="genero_id">Código:</label>--%>
-                            <input type="hidden" class="form-control" name="id" id="genero_id"  value="${param.id}" visible="true"  />
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="genero_nome">Nome:</label>
-                            <input type="text" class="form-control" name="nome" id="genero_nome" value="${param.nome}"  />
-                        </div> 
-                        
-                        <div>
-                            <table>
-                                <tr>
-                                     
-                                    <c:if test="${empty param.id }">
-                                        <td><input type="submit" value="Gravar" name="gravar" class="btn btn-default" /> </td>                                                                                                        
-                                    </c:if>
-                                    <c:if test="${param.id > 0 }">
-                                        <td><input type="submit" value="Alterar"  name="alterar" class="btn btn-default"/></td> 
-                                    </c:if>                                    
-                                </tr>  
-                            </table>
-                        </div>
-                    </form>
+            <div class="container listagem-default">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <form name="Genero" action="CadastrarGenero" method="Post" onsubmit="return validarGenero();" class="default-form register-form">
+                            <div class="form-group">
+                                <%--<label for="genero_id">Código:</label>--%>
+                                <input type="hidden" class="form-control" name="id" id="genero_id"  value="${param.id}" visible="true"  />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="genero_nome">Nome:</label>
+                                <input type="text" class="form-control" name="nome" id="genero_nome" value="${param.nome}"  />
+                            </div> 
+
+                            <div>
+                                <table>
+                                    <tr>
+
+                                        <c:if test="${empty param.id }">
+                                            <td><input type="submit" value="Gravar" name="gravar" class="btn btn-default" /> </td>                                                                                                        
+                                        </c:if>
+                                        <c:if test="${param.id > 0 }">
+                                            <td><input type="submit" value="Alterar"  name="alterar" class="btn btn-default"/></td> 
+                                        </c:if>                                    
+                                    </tr>  
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         

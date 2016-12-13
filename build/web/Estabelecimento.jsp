@@ -40,61 +40,65 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Estabelecimento</h1>
-                    <h2>Editer o estabelecimento selecionado</h2>
+                    <p>Edite o estabelecimento selecionado</p>
                 </div>
             </header>
             
             <div class="container">
-                <form action="CadastrarEstabelecimento" method="Get">
-                    <div class="form-group">
-                        <label for="estabelecimento_id">Código:</label>
-                        <input type="text" class="form-control" name="id" id="estabelecimento_id" value="${param.id}"  />
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <form action="CadastrarEstabelecimento" method="Get" class="default-form register-form">
+                            <div class="form-group">
+                                <label for="estabelecimento_id">Código:</label>
+                                <input type="text" class="form-control" name="id" id="estabelecimento_id" value="${param.id}"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="estabelecimento_nome">Nome:</label>
+                                <input type="text" class="form-control" name="nome" id="estabelecimento_nome" value="${param.nome}"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="estabelecimento_endereco">Endereço:</label>
+                                <input type="text" class="form-control" name="endereco" id="estabelecimento_endereco" value="${param.endereco}"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="estabelecimento_complemento">Complemento:</label>
+                                <input type="text" class="form-control" name="complemento" id="estabelecimento_complemento" value="${param.complemento}"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="estabelecimento_bairro">Bairro:</label>
+                                <input type="text" class="form-control" name="bairro" id="estabelecimento_bairro" value="${param.bairro}" />
+                            </div>
+                            <div class="form-group">
+                                <label for="estabelecimento_cidade">Cidade</label>
+                                <input type="text" class="form-control" name="cidade" id="estabelecimento_cidade" value="${param.cidade}" />
+                            </div>
+                            <div class="form-group">
+                                <label for="estabelecimento_uf">Uf:</label>
+                                <input type="text" class="form-control" name="uf" id="estabelecimento_uf" value="${param.uf}" />
+                            </div>
+                            <div class="form-group">
+                                <label for="estabelecimento_latitude">Latitude</label>
+                                <input type="text" class="form-control" name="latitude" id="estabelecimento_latitude" value="${param.latitude}" />
+                            </div>
+                            <div class="form-group">
+                                <label for="estabelecimento_longitude">Longitude</label>
+                                <input type="text" class="form-control" name="longitude" id="estabelecimento_longitude" value="${param.longitude}" />
+                            </div>                        
+                            <div>
+                                <table>
+                                    <tr>                                     
+                                        <c:if test="${empty param.id }">
+                                            <td><input type="submit" value="Gravar" name="gravar" class="btn btn-default" /> </td>                                                                                                        
+                                        </c:if>
+                                        <c:if test="${param.id > 0 }">
+                                            <td><input type="submit" value="Alterar"  name="alterar" class="btn btn-default"/></td> 
+                                        </c:if>                                    
+                                    </tr>  
+                                </table>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="estabelecimento_nome">Nome:</label>
-                        <input type="text" class="form-control" name="nome" id="estabelecimento_nome" value="${param.nome}"  />
-                    </div>
-                    <div class="form-group">
-                        <label for="estabelecimento_endereco">Endereço:</label>
-                        <input type="text" class="form-control" name="endereco" id="estabelecimento_endereco" value="${param.endereco}"  />
-                    </div>
-                    <div class="form-group">
-                        <label for="estabelecimento_complemento">Complemento:</label>
-                        <input type="text" class="form-control" name="complemento" id="estabelecimento_complemento" value="${param.complemento}"  />
-                    </div>
-                    <div class="form-group">
-                        <label for="estabelecimento_bairro">Bairro:</label>
-                        <input type="text" class="form-control" name="bairro" id="estabelecimento_bairro" value="${param.bairro}" />
-                    </div>
-                    <div class="form-group">
-                        <label for="estabelecimento_cidade">Cidade</label>
-                        <input type="text" class="form-control" name="cidade" id="estabelecimento_cidade" value="${param.cidade}" />
-                    </div>
-                    <div class="form-group">
-                        <label for="estabelecimento_uf">Uf:</label>
-                        <input type="text" class="form-control" name="uf" id="estabelecimento_uf" value="${param.uf}" />
-                    </div>
-                    <div class="form-group">
-                        <label for="estabelecimento_latitude">Latitude</label>
-                        <input type="text" class="form-control" name="latitude" id="estabelecimento_latitude" value="${param.latitude}" />
-                    </div>
-                    <div class="form-group">
-                        <label for="estabelecimento_longitude">Longitude</label>
-                        <input type="text" class="form-control" name="longitude" id="estabelecimento_longitude" value="${param.longitude}" />
-                    </div>                        
-                    <div>
-                        <table>
-                            <tr>                                     
-                                <c:if test="${empty param.id }">
-                                    <td><input type="submit" value="Gravar" name="gravar" class="btn btn-default" /> </td>                                                                                                        
-                                </c:if>
-                                <c:if test="${param.id > 0 }">
-                                    <td><input type="submit" value="Alterar"  name="alterar" class="btn btn-default"/></td> 
-                                </c:if>                                    
-                            </tr>  
-                        </table>
-                    </div>
-                </form>
+                </div>
             </div>   
         </div>
                     

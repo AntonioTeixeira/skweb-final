@@ -49,19 +49,19 @@
                             
                 <table class="table table-bordered table-hover">
                     <tr class="info">
-                        <td>Código</td>
+                        <td width="5%">Código</td>
                         <td>Nome</td>                                                                          
-                        <td>Alterar</td>
-                        <td>Remover</td>
+                        <td width="15%">Alterar</td>
+                        <td width="15%">Remover</td>
                     </tr>    
                     
                     <c:forEach var="cantor" items="${dao.lista}">   
                     
                         <tr>
-                            <td>${cantor.id}</td>
+                            <td width="5%">${cantor.id}</td>
                             <td>${cantor.nome}</td>                                                                                                                             
-                            <td class="listagem-remover"><a href="Cantor.jsp?id=${cantor.id}&nome=${cantor.nome}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Alterar</a></td>
-                            <td class="listagem-excluir"><a href="CadastrarCantor?id=${cantor.id}&excluir=excluir"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remover</a></td>
+                            <td width="15%" class="listagem-remover"><a href="Cantor.jsp?id=${cantor.id}&nome=${cantor.nome}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Alterar</a></td>
+                            <td width="15%" class="listagem-excluir"><a href="CadastrarCantor?id=${cantor.id}&excluir=excluir"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remover</a></td>
                         </tr>
                         
                     </c:forEach>                                                                                            

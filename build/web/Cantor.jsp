@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-	<title>Cantor - SmartK - Sistema de Gestão do SmartK</title>
+	<title>Cantores para Karaoke - SmartK - Sistema de Gestão do SmartK</title>
         <script type="text/javascript" src="js/Validar.js"></script>
 	<meta name="description" content="Sistema de Gestão do SmartK" />
 
@@ -40,32 +40,36 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Cantor</h1>
-                    <h2>Edite o cantor selecionado</h2>
+                    <p>Edite o cantor selecionado</p>
                 </div>
             </header>
             
             <div class="container">
-                <form name="CadastrarCantor" action="CadastrarCantor" method="Get" onsubmit="return validacao();">
-                    <div class="form-group">
-                        <input type="hidden" class="form-control" name="id" id="genero_id"  value="${param.id}" visible="true"  />
-                    </div>
-                    <div class="form-group">
-                        <label for="cad_nome">Nome:</label>
-                        <input type="text" class="form-control" name="nome" id="cad_nome" value="${param.nome}"  />
-                    </div>
-                    <div>
-                        <table>
-                            <tr>                                     
-                                <c:if test="${empty param.id }">
-                                    <td><input type="submit" value="Gravar" name="gravar" class="btn btn-default" /> </td>                                                                                                        
-                                </c:if>
-                                <c:if test="${param.id > 0 }">
-                                    <td><input type="submit" value="Alterar"  name="alterar" class="btn btn-default"/></td> 
-                                </c:if>                                    
-                            </tr>  
-                        </table>                                            
-                    </div>
-                </form>    
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <form name="CadastrarCantor" action="CadastrarCantor" method="Get" onsubmit="return validacao();" class="default-form register-form">
+                            <div class="form-group">
+                                <input type="hidden" class="form-control" name="id" id="genero_id"  value="${param.id}" visible="true"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="cad_nome">Nome:</label>
+                                <input type="text" class="form-control" name="nome" id="cad_nome" value="${param.nome}"  />
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>                                     
+                                        <c:if test="${empty param.id }">
+                                            <td><input type="submit" value="Gravar" name="gravar" class="btn btn-default" /> </td>                                                                                                        
+                                        </c:if>
+                                        <c:if test="${param.id > 0 }">
+                                            <td><input type="submit" value="Alterar"  name="alterar" class="btn btn-default"/></td> 
+                                        </c:if>                                    
+                                    </tr>  
+                                </table>                                            
+                            </div>
+                        </form>
+                    </div>    
+                </div>      
             </div>   
         </div>
         

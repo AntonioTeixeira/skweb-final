@@ -48,17 +48,17 @@
                     
                     <table class="table  table-bordered table-hover">
                         <tr class="info">
-                            <td>Código</td>
+                            <td width="5%">Código</td>
                             <td>Nome</td>
-                            <td>Alterar</td>
-                            <td>Remover</td>
+                            <td width="15%">Alterar</td>
+                            <td width="15%">Remover</td>
                         </tr>
                     <c:forEach var="genero" items="${dao.lista}">
                         <tr>
-                            <td>${genero.id}</td>
+                            <td width="5%">${genero.id}</td>
                             <td>${genero.nome}</td>                                                                                                                            
-                            <td class="listagem-remover"><a href="Genero.jsp?&id=${genero.id}&nome=${genero.nome}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Alterar</a></td>
-                            <td class="listagem-excluir"><a href="CadastrarGenero?id=${genero.id}&excluir=excluir"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remover</a></td>
+                            <td width="15%" class="listagem-remover"><a href="Genero.jsp?&id=${genero.id}&nome=${genero.nome}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Alterar</a></td>
+                            <td width="15%" class="listagem-excluir"><a href="CadastrarGenero?id=${genero.id}&excluir=excluir"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remover</a></td>
                         </tr>
                     </c:forEach>                                  
                 </table>

@@ -37,7 +37,7 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Estabelecimentos</h1>
-                    <h2>A Lista de Estabelecimentos inseridos no SmartK</h2>
+                    <p>A Lista de Estabelecimentos inseridos no SmartK</p>
                 </div>
             </header>
             
@@ -48,28 +48,28 @@
                 
                 <table class="table  table-bordered table-hover">
                     <tr class="info"> 
-                        <td>Códgo</td>
+                        <td width="5%">Códgo</td>
                         <td>Nome</td>                                
                         <td>Endereço</td>                                
                         <td>Complemento</td>
                         <td>Bairro</td>
                         <td>Cidade</td>
                         <td>Uf</td>
-                        <td>Alterar</td>
-                        <td>Remover</td>                                
+                        <td width="15%">Alterar</td>
+                        <td width="15%">Remover</td>                                
                     </tr>      
 
                     <c:forEach var="estabelecimento" items="${dao.lista}">            
                         <tr>
-                            <td>${estabelecimento.id}</td>   
+                            <td width="5%">${estabelecimento.id}</td>   
                             <td>${estabelecimento.nome}</td>
                             <td>${estabelecimento.endereco}</td>
                             <td>${estabelecimento.complemento}</td>
                             <td>${estabelecimento.bairro}</td>
                             <td>${estabelecimento.cidade}</td>
                             <td>${estabelecimento.uf}</td> 
-                            <td class="listagem-remover"><a href="Estabelecimento.jsp?&id=${estabelecimento.id}&nome=${estabelecimento.nome}&endereco=${estabelecimento.endereco}&complemento=${estabelecimento.complemento}&bairro=${estabelecimento.bairro}&cidade=${estabelecimento.cidade}&uf=${estabelecimento.uf}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Alterar</a></td>
-                            <td class="listagem-excluir"><a href="CadastrarEstabelecimento?id=${estabelecimento.id}&excluir=excluir"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remover</a></td>
+                            <td width="15%" class="listagem-remover"><a href="Estabelecimento.jsp?&id=${estabelecimento.id}&nome=${estabelecimento.nome}&endereco=${estabelecimento.endereco}&complemento=${estabelecimento.complemento}&bairro=${estabelecimento.bairro}&cidade=${estabelecimento.cidade}&uf=${estabelecimento.uf}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Alterar</a></td>
+                            <td width="15%" class="listagem-excluir"><a href="CadastrarEstabelecimento?id=${estabelecimento.id}&excluir=excluir"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remover</a></td>
                         </tr>
                     </c:forEach>                                            
                     <%----%>

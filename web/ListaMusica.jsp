@@ -49,23 +49,23 @@
 
                 <table class="table  table-bordered table-hover">
                     <tr class="info">
-                        <td>Id</td>
+                        <td width="5%">Id</td>
                         <td>Código</td>
                         <td>Nome</td>                        
                         <td>Ínicio</td>
                         <td>Idioma</td>
-                        <td>Alterar</td>
-                        <td>Remover</td>                                                
+                        <td width="15%">Alterar</td>
+                        <td width="15%">Remover</td>                                                
                     </tr>    
                     
                     <c:forEach var="musica" items="${dao.lista}">                                                       
-                            <td>${musica.id}</td>
+                            <td width="5%">${musica.id}</td>
                             <td>${musica.codigo}</td>
                             <td>${musica.nome}</td>                                                                                                                                                                                                    
                             <td>${musica.inicio}</td>
                             <td>${musica.idioma}</td>
-                            <td><a href="UsuarioNew.jsp?id=${usuario.id}">Alterar</a></td>
-                            <td><a href="CadastrarUsuario?id=${usuario.id}&excluir=excluir">Remover</a></td>
+                            <td width="15%"><a href="UsuarioNew.jsp?id=${usuario.id}">Alterar</a></td>
+                            <td width="15%"><a href="CadastrarUsuario?id=${usuario.id}&excluir=excluir">Remover</a></td>
                         </tr>
                     </c:forEach>  
                     

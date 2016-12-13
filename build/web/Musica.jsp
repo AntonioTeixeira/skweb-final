@@ -39,7 +39,7 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Música</h1>
-                    <h2>Edite a música selecionada</h2>
+                    <p>Edite a música selecionada</p>
                 </div>
             </header>
             

@@ -48,7 +48,7 @@
 
                 <table class="table  table-bordered table-hover">
                     <tr class="info">
-                        <td>Código</td>
+                        <td width="5%">Código</td>
                         <td>Nome</td>
                         <td>Sobrenome</td>
                         <td>Data de Nascimento</td>
@@ -61,14 +61,14 @@
                         <td>Cidade</td>                        
                         <td>Facebook</td>                                    
                         --%>
-                        <td>Alterar</td>
-                        <td>Remover</td>
+                        <td width="15%">Alterar</td>
+                        <td width="15%">Remover</td>
                     </tr>    
 
                     <c:forEach var="usuario" items="${dao.lista}">   
 
                         <tr>
-                            <td>${usuario.id}</td>
+                            <td width="5%">${usuario.id}</td>
                             <td>${usuario.nome}</td>                                                                                    
                             <td>${usuario.sobrenome}</td>                                                                                    
                             <td>${usuario.dataNascimento}</td>                                                                                    
@@ -81,8 +81,8 @@
                             <td>${usuario.cidade}</td>                                                                                                                
                             <td>${usuario.facebook}</td>     
                             --%>
-                            <td class="listagem-remover"><a href="UsuarioNew.jsp?id=${usuario.id}&nome=${usuario.nome}&sobrenome=${usuario.sobrenome}&login=${usuario.login}&datanascimento=${usuario.dataNascimento}&senha=${usuario.senha}&email=${usuario.email}&celular=${usuario.celular}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Alterar</a></td>                                                                                                                                                                                                                                                     
-                            <td class="listagem-excluir"><a href="CadastrarUsuario?id=${usuario.id}&excluir=excluir"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remover</a></td>
+                            <td width="15%" class="listagem-remover"><a href="UsuarioNew.jsp?id=${usuario.id}&nome=${usuario.nome}&sobrenome=${usuario.sobrenome}&login=${usuario.login}&datanascimento=${usuario.dataNascimento}&senha=${usuario.senha}&email=${usuario.email}&celular=${usuario.celular}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Alterar</a></td>                                                                                                                                                                                                                                                     
+                            <td width="15%" class="listagem-excluir"><a href="CadastrarUsuario?id=${usuario.id}&excluir=excluir"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remover</a></td>
                         </tr>
                     </c:forEach>                                                                                            
                 </table>

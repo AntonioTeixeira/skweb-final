@@ -10,9 +10,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        
         <title>Fazer Login no SmartK</title>
-        <meta name="description" content="Sistema de Gestão do SmartK" />
+        <meta name="description" content="Faça o Login no Sistema de Gestão de Karaokê SmartK" />
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,29 +21,42 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style-smartk.css" >
     </head>
-    <body>
+    
+    <body class="login">
         <header id="header" class="default-primary-color">
             <div class="container">
-                <a href="index.html" title="SmartK" class="logo">
+                <a href="" title="SmartK" class="logo">
                     <img src="img/logo-negativo.png" alt="SmartK" height="60" >
                 </a>
             </div>
         </header>
+        
         <div id="wrapper" class="wrapper bg-default">
+            <header class="bg-light">
+                <div class="container">
+                    <h1>Realize o acesso na sua conta SmartK</h1>
+                    <p>Para realizá-lo entre com o seu email e senha abaixo.</p>
+                </div>
+            </header>
+            
             <div class="container">
-                <form action="Login" method="Get" class="login-form">
-                    <div class="form-group">
-                        <label for="login">Login:</label>
-                        <input type="text" class="form-control" name="login" id="login"  />
+                 <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <form action="Login" method="Get" class="login-form">
+                            <div class="form-group">
+                                <label for="login">Login:</label>
+                                <input type="text" class="form-control" name="login" id="login"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha:</label>
+                                <input type="password" class="form-control" name="senha" id="senha"  />
+                            </div>
+                            <div>
+                                <input type="submit" value="Fazer Login" class="btn btn-default" /> 
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="login">Senha:</label>
-                        <input type="text" class="form-control" name="senha" id="senha"  />
-                    </div>
-                    <div>
-                        <input type="submit" value="Fazer Login" class="btn btn-default"	/> 
-                    </div>
-                </form>
+                 </div>    
             </div>   
         </div>
         

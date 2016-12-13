@@ -29,7 +29,7 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li><a href="index.html" title="Tela Inicial">Home</a></li>
-                    <li class="active"><a href="#" title="Lista de Cantores">Cantor</a></li>
+                    <li class="active"><a href="#" title="Lista de Cantores">Cantores</a></li>
 		</ol>
             </div>
 	</div>

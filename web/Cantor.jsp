@@ -30,7 +30,7 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li><a href="index.html" title="Tela Inicial">Home</a></li>
-                    <li class="active"><a href="ListaCator.jsp" title="Lista de Cantores">Cantores</a></li>
+                    <li class="active"><a href="ListaCantor.jsp" title="Lista de Cantores">Cantores</a></li>
                     <li class="active"><a href="#" title="Cantor">Cantor: ${param.nome}</a></li>
 		</ol>
             </div>

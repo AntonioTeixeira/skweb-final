@@ -33,6 +33,25 @@ function validacao()
      /*
      * Inicio validação Genero
      */
+
+function validarLoginVazio()
+{
+
+    if(document.Login.login.value=="")
+    {
+        alert("Por favor, preencha o campo Login.");
+        document.Login.login.focus();
+        return false;
+    }
+    
+    if(document.Login.senha.value=="")
+    {
+        alert("Por favor, preencha o campo Login.");
+        document.Login.senha.focus();
+        return false;
+    }
+}
+
 function validarGenero()
 {
 

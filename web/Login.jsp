@@ -45,11 +45,11 @@
                         <form action="Login" method="Get" class="login-form">
                             <div class="form-group">
                                 <label for="login">Login:</label>
-                                <input type="text" class="form-control" name="login" id="login"  />
+                                <input type="text" class="form-control" name="login" id="login" maxlength="50" />
                             </div>
                             <div class="form-group">
                                 <label for="senha">Senha:</label>
-                                <input type="password" class="form-control" name="senha" id="senha"  />
+                                <input type="password" class="form-control" name="senha" id="senha" maxlength="50" />
                             </div>
                             <div>
                                 <input type="submit" value="Fazer Login" class="btn btn-default" /> 

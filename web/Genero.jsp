@@ -6,7 +6,6 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -29,7 +28,7 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li><a href="index.html" title="Tela Inicial">Home</a></li>
-                    <li><a href="ListaGenero.jsp" title="Lista de Generos">Generos</a></li>
+                    <li><a href="ListaGenero.jsp" title="Lista de Generos">Gêneros</a></li>
                     <li class="active"><a href="#" title="Gênero">Gênero: ${param.nome}</a></li>
 		</ol>
             </div>
@@ -39,7 +38,7 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>${param.nome}</h1>
-                    <h2>Edite o genero selecionado</h2>
+                    <h2>Edite o gênero selecionado</h2>
                 </div>
             </header>
             

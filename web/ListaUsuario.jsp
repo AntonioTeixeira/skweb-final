@@ -4,13 +4,14 @@
     Author     : Odirlei
 --%>
 
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
     
     <head>
-        <title>Usuários - SmartK - Sistema de Gestão do SmartK</title>
-        <meta name="description" content="Sistema de Gestão do SmartK" />
+        <title>UsuÃ¡rios - SmartK - Sistema de GestÃ£o do SmartK</title>
+        <meta name="description" content="Sistema de GestÃ£o do SmartK" />
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +29,7 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li><a href="index.html" title="Tela Inicial">Home</a></li>
-                    <li class="active"><a href="#" title="Lista de Usuários">Usuários</a></li>
+                    <li class="active"><a href="#" title="Lista de UsuÃ¡rios">UsuÃ¡rios</a></li>
 		</ol>
             </div>
 	</div>
@@ -36,8 +37,8 @@
         <div id="wrapper" class="wrapper bg-default">
             <header class="bg-light">
                 <div class="container">
-                    <h1>Usuários</h1>
-                    <p>A Lista de usuários inseridos no SmartK</p>
+                    <h1>UsuÃ¡rios</h1>
+                    <p>A Lista de usuÃ¡rios inseridos no SmartK</p>
                 </div>
             </header>
             
@@ -48,7 +49,7 @@
 
                 <table class="table  table-bordered table-hover">
                     <tr class="info">
-                        <td width="5%">Código</td>
+                        <td width="5%">CÃ³digo</td>
                         <td>Nome</td>
                         <td>Sobrenome</td>
                         <td>Data de Nascimento</td>

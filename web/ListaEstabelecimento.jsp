@@ -4,13 +4,13 @@
     Author     : Odirlei
 --%>
 
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
 <html lang="pt-br">
     <head>
         <title>Estabelecimentos</title>
-        <meta name="description" content="Sistema de Gestão do SmartK" />
+        <meta name="description" content="Sistema de GestÃ£o do SmartK" />
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,9 +48,9 @@
                 
                 <table class="table  table-bordered table-hover">
                     <tr class="info"> 
-                        <td width="5%">Códgo</td>
+                        <td width="5%">CÃ³dgo</td>
                         <td>Nome</td>                                
-                        <td>Endereço</td>                                
+                        <td>EndereÃ§o</td>                                
                         <td>Complemento</td>
                         <td>Bairro</td>
                         <td>Cidade</td>

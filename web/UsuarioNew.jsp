@@ -39,7 +39,7 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Usuário ${param.nome}</h1>
-                    <h2>Edite a usuário selecionada</h2>
+                    <p>Edite a usuário selecionada</p>
                 </div>
             </header>
             

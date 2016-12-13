@@ -37,7 +37,7 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Usuários</h1>
-                    <h2>A Lista de usuários inseridos no SmartK</h2>
+                    <p>A Lista de usuários inseridos no SmartK</p>
                 </div>
             </header>
             

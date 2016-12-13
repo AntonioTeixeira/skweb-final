@@ -38,7 +38,7 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Músicas</h1>
-                    <h2>A Lista de músicas inseridas no SmartK</h2>
+                    <p>A Lista de músicas inseridas no SmartK</p>
                 </div>
             </header>
             

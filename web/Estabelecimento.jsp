@@ -40,7 +40,7 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Estabelecimento</h1>
-                    <h2>Editer o estabelecimento selecionado</h2>
+                    <p>Edite o estabelecimento selecionado</p>
                 </div>
             </header>
             

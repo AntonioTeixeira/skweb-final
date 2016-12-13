@@ -40,7 +40,7 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Cantor</h1>
-                    <h2>Edite o cantor selecionado</h2>
+                    <p>Edite o cantor selecionado</p>
                 </div>
             </header>
             

@@ -38,7 +38,7 @@
             <header class="bg-light">
                 <div class="container">
                     <h1>Gêneros</h1>
-                    <h2>A Lista de gêneros inseridos no SmartK</h2>
+                    <p>Conheça todos os gêneros que o SmartK possui.</p>
                 </div>
             </header>
             

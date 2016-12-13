@@ -44,66 +44,70 @@
             </header>
             
             <div class="container">
-                <form name="Usuario" action="CadastrarUsuario" method="Get" onsubmit="return validarUsuario()"> 
-                    <div class="form-group">
-                        <%--<label for="usuario_id">Id:</label>--%>
-                        <input type="hidden" class="form-control" name="id" id="usuario_id" value="${param.id}" disabled="true"  />
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <form name="Usuario" action="CadastrarUsuario" method="Get" onsubmit="return validarUsuario()" class="default-form register-form"> 
+                            <div class="form-group">
+                                <%--<label for="usuario_id">Id:</label>--%>
+                                <input type="hidden" class="form-control" name="id" id="usuario_id" value="${param.id}" disabled="true"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="usuario_nome">Nome:</label>
+                                <input type="text" class="form-control" name="nome" id="usuario_nome" value="${param.nome}" />
+                            </div>
+                            <div class="form-group">
+                                <label for="usuario_sobrenome">Sobrenome:</label>
+                                <input type="text" class="form-control" name="sobrenome" id="usuario_sobrenome" value="${param.sobrenome}" />
+                            </div>
+                            <div class="form-group">
+                                <label for="usuario_datanascimento">Data de Nascimento:</label>
+                                <input type="text" class="form-control" name="datanascimento" id="usuario_datanascimento" value="${param.datanascimento}"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="usuario_email">Email:</label>
+                                <input type="text" class="form-control" name="email" id="usuario_email" value="${param.email}"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="usuario_celular">Celular:</label>
+                                <input type="text" class="form-control" name="celular" id="usuario_celular" value="${param.celular}"  />
+                            </div>
+                            <%--
+                            <div class="form-group">
+                                <label for="usuario_celular">Cidade:</label>
+                                <input type="text" class="form-control" name="cidade" id="usuario_cidade" value="${param.cidade}"  />
+                            </div>
+                            <div class="form-group">
+                                <label for="usuario_celular">Uf:</label>
+                                <input type="text" class="form-control" name="uf" id="usuario_uf" value="${param.uf}"  />
+                            </div>
+                            --%>
+                            <div class="form-group">
+                                <label for="usuario_login">Login:</label>
+                                <input type="text" class="form-control" name="login" id="usuario_login" value="${param.login}" />
+                            </div>
+                            <div class="form-group">
+                                <label for="usuario_senha">Senha:</label>
+                                <input type="text" class="form-control" name="senha" id="usuario_senha" value="${param.senha}" />
+                            </div>                       
+                            <div class="form-group">
+                                <label for="usuario_confirmarsenha">Confirmar senha:</label>
+                                <input type="text" class="form-control" name="confirmarsenha" id="usuario_confirmarsenha" value="${param.senha}"/>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <c:if test="${empty param.id }">
+                                            <td><input type="submit" value="Gravar" name="gravar" class="btn btn-default" /> </td>                                                                                                        
+                                        </c:if>
+                                        <c:if test="${param.id > 0 }">
+                                            <td><input type="submit" value="Alterar"  name="alterar" class="btn btn-default"/></td> 
+                                        </c:if>
+                                    </tr>  
+                                </table>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="usuario_nome">Nome:</label>
-                        <input type="text" class="form-control" name="nome" id="usuario_nome" value="${param.nome}" />
-                    </div>
-                    <div class="form-group">
-                        <label for="usuario_sobrenome">Sobrenome:</label>
-                        <input type="text" class="form-control" name="sobrenome" id="usuario_sobrenome" value="${param.sobrenome}" />
-                    </div>
-                    <div class="form-group">
-                        <label for="usuario_datanascimento">Data de Nascimento:</label>
-                        <input type="text" class="form-control" name="datanascimento" id="usuario_datanascimento" value="${param.datanascimento}"  />
-                    </div>
-                    <div class="form-group">
-                        <label for="usuario_email">Email:</label>
-                        <input type="text" class="form-control" name="email" id="usuario_email" value="${param.email}"  />
-                    </div>
-                    <div class="form-group">
-                        <label for="usuario_celular">Celular:</label>
-                        <input type="text" class="form-control" name="celular" id="usuario_celular" value="${param.celular}"  />
-                    </div>
-                    <%--
-                    <div class="form-group">
-                        <label for="usuario_celular">Cidade:</label>
-                        <input type="text" class="form-control" name="cidade" id="usuario_cidade" value="${param.cidade}"  />
-                    </div>
-                    <div class="form-group">
-                        <label for="usuario_celular">Uf:</label>
-                        <input type="text" class="form-control" name="uf" id="usuario_uf" value="${param.uf}"  />
-                    </div>
-                    --%>
-                    <div class="form-group">
-                        <label for="usuario_login">Login:</label>
-                        <input type="text" class="form-control" name="login" id="usuario_login" value="${param.login}" />
-                    </div>
-                    <div class="form-group">
-                        <label for="usuario_senha">Senha:</label>
-                        <input type="text" class="form-control" name="senha" id="usuario_senha" value="${param.senha}" />
-                    </div>                       
-                    <div class="form-group">
-                        <label for="usuario_confirmarsenha">Confirmar senha:</label>
-                        <input type="text" class="form-control" name="confirmarsenha" id="usuario_confirmarsenha" value="${param.senha}"/>
-                    </div>
-                    <div>
-                        <table>
-                            <tr>
-                                <c:if test="${empty param.id }">
-                                    <td><input type="submit" value="Gravar" name="gravar" class="btn btn-default" /> </td>                                                                                                        
-                                </c:if>
-                                <c:if test="${param.id > 0 }">
-                                    <td><input type="submit" value="Alterar"  name="alterar" class="btn btn-default"/></td> 
-                                </c:if>
-                            </tr>  
-                        </table>
-                    </div>
-                </form>
+                </div>
             </div>   
         </div>
         

@@ -40,9 +40,9 @@
             </header>
             
             <div class="container">
-                 <div class="row">
+                <div class="row">
                     <div class="col-md-4 col-md-offset-4">
-                        <form action="Login" method="Get" class="login-form">
+                        <form action="Login" method="Get" class="default-form login-form">
                             <div class="form-group">
                                 <label for="login">Login:</label>
                                 <input type="text" class="form-control" name="login" id="login" maxlength="50" />
@@ -56,7 +56,7 @@
                             </div>
                         </form>
                     </div>
-                 </div>    
+                </div>    
             </div>   
         </div>
         

@@ -56,9 +56,13 @@
             #wrapper .listagem-default table tr.info { color: #009688; }
             #wrapper .listagem-default table tr.info td { background: #efefef; font-weight: bold; }
         
-        #wrapper .login-form { padding: 30px; border: 1px solid #ccc; border-radius: 4px; }
-            #wrapper .login-form label { cursor: pointer; }
-            #wrapper .login-form input[type="submit"] { width: 100%; padding: 15px 0; font-weight: bold; }          
+        #wrapper .default-form { padding: 30px; border: 1px solid #ccc; border-radius: 4px; }
+            #wrapper .default-form label { cursor: pointer; }
+            
+        #wrapper .login-form {  }
+            #wrapper .login-form input[type="submit"] { width: 100%; padding: 15px 0; font-weight: bold; }
+        
+        #wrapper .register-form {  }
 
 
 /* Footer

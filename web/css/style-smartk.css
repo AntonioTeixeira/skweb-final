@@ -63,8 +63,18 @@
             #wrapper .login-form input[type="submit"] { width: 100%; padding: 15px 0; font-weight: bold; }
         
         #wrapper .register-form {  }
-
-
+        
+        #wrapper .listagem-fila { }
+            #wrapper .listagem-fila h3,
+            #wrapper .listagem-fila h4,
+            #wrapper .listagem-fila p { margin-top: 0px; }
+            
+            #wrapper .listagem-fila .fila-item { }
+            #wrapper .listagem-fila .fila-item .item-posicao { }
+            #wrapper .listagem-fila .fila-item .item-foto { }
+            #wrapper .listagem-fila .fila-item .item-pedido { }
+            #wrapper .listagem-fila .fila-item .item-status { }
+            
 /* Footer
 ======================================================================================= */
     #footer { border-top: #FF4081 3px solid; }

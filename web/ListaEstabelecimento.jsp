@@ -77,8 +77,6 @@
             </div>   
         </div>        
                    
-        <c:import url="Rodape.jsp"></c:import>
-        
+        <c:import url="Rodape.jsp"></c:import>        
     </body>
-
 </html>
